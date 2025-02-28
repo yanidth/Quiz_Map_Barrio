@@ -1,4 +1,4 @@
-function detectCentroids() {
+function distanciaPDF() {
 
     drawnLayers.forEach(
        function (layer){
@@ -23,7 +23,7 @@ function detectCentroids() {
     )
 }
 
-function calculateAreas() {
+function zonasHomicidios() {
     
     drawnLayers.forEach(
         function (layer) {
@@ -59,7 +59,7 @@ function calculateAreas() {
     )
 }
 
-function calculateCentroidDistances() {
+function ditanciaArboles() {
     if (drawnLayers.length < 2) {
         console.warn("No hay suficientes polígonos para calcular la distancia entre centroides.");
         return;
@@ -125,4 +125,4 @@ function calculateCentroidDistances() {
             console.warn("Error al calcular la distancia entre centroides: ", error);
         }
     }
-}
+} 

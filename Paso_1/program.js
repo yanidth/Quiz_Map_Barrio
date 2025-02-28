@@ -1,4 +1,4 @@
-var map = L.map('map').setView([4.965917443222924, -73.48966839895706], 15); 
+var map = L.map('map').setView([4.692224704154009, -74.0771391360336], 15); 
 
 // Agregar la capa de OpenStreetMap
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -10,4 +10,4 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 map.pm.addControls({
     position: 'topleft',
     drawMarker: false
-});
+}); 

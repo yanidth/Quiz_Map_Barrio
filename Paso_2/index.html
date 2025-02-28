@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>  
+    <title>Visor Geográfico</title>  
 
     <!-- CSS de Leaflet -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
@@ -16,18 +16,28 @@
     <!-- Tu CSS personalizado -->
     <link rel="stylesheet" href="styles.css">
 
+    <!-- Librería Turf.js para análisis geoespacial -->
     <script src="https://cdn.jsdelivr.net/npm/@turf/turf@7/turf.min.js"></script>
+
+    <style>
+        /* Estilo corregido para el contenedor del mapa */
+        #map {
+            width: 100%;
+            height: 800px;
+            border: 1px solid black; /* Borde temporal para verificar visibilidad */
+        }
+    </style>
+
 </head>
 <body>
 
     <!-- Contenedor del mapa -->
-    <div id="map"></div> 
+    <div id="map"></div>   
 
-    <button class="boton" id="Centroid">Centroides</button>
-    <button class="boton" id="Areas">Áreas</button>
-    <button class="boton" id="Centroid_distance">Distancia Centroides</button>
-    <button class="boton" id="Intersection">Detectar Intersecciones</button>
-    
+    <!-- Botones de funcionalidad -->
+    <button class="boton" id="Arboles">Árboles</button>
+    <button class="boton" id="Homicidios">Homicidios</button>
+    <button class="boton" id="Distancia">Distancia</button>
 
     <!-- JS de Leaflet (debe ir antes de Geoman) -->
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
